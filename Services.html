@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ServicesPage</title>
+</head>
+
+<body>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="BeanHavenCoffee.html">Home</a>
+    <a href="AboutPage.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact.html">Contact Us</a>
+    <p style="color: white; font-size: 25px">Andre Thomas<br>Web Developer/Designer</p>
+  </div>
+</div>
+
+<h1>We Offer...</h1>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigate</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    
+<style>
+    
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100%;
+  background-image: url("images/coffeesteam.jpg");
+  color: cornflowerblue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: cornflowerblue;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 20px
+}
+
+
+.section {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.fade-in {
+    animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: -2.5;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+.footer {
+   padding-top: 12px;
+}
+</style>
+
+        <div class="section">
+          <div class="col fade-in">
+              <h3>DIY Coffee Cups</h3>
+              <img src="images/edit_coffee_cup.png" alt="Coffee Cup" style="height: 310px" width="400px">
+            <p>
+              Here at BeanHaven we offer you the pleasure of creating your own<br>
+              unique coffee cup so you can enjoy your coffee with style!
+            </p>
+          </div>
+            
+            <div class="section">
+          <div class="col fade-in">
+              <h3>Entertainment</h3>
+              <img src="images/mic.jpg" alt="mic stand" style="height: 310px" width="400px">
+            <p>
+              Want to enjoy live music? Or even have a little laugh? Well look no further<br>
+              as on the 2nd and last friday of each month stop by to see a live performace<br>
+              or a stand-up routine chosen by YOU. At the beginning of each month a poll<br>
+              will be avaiable for people to pick from and by the end of that week the winners<br>
+              will be the guest of honor for their respective weeks. So if you want to see your<br>
+              fav perform, make sure to vote!
+            </p>
+          </div>
+            
+                <div class="section">
+          <div class="col fade-in">
+            <h3>Create Your Own Coffee Flavour</h3>
+              <img src="images/dispenser.jpg" alt="drink dispenser" style="height: 310px" width="400px">
+            <p>
+              Ever wanted to create your own flavored coffee? Well rolling out in<br>
+              specific stores, you'll not only be able to create your own flavour<br>
+              but you can also enroll your flavour into a state-wide sweepstakes<br>
+              for a chance to win an cash prize as well as coffee flavour of the year!
+            </p>
+         </div>    
+     </div>
+  </div>
+</div>
+    
+<div class="footer">
+<p style="text-align: center">Andre Thomas &copy; 2021</p>
+</div>  
+
+</body>
+</html>

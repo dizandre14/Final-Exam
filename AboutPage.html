@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AboutUs</title>
+</head>
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="BeanHavenCoffee.html">Home</a>
+    <a href="AboutPage.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact.html">Contact Us</a>
+    <p style="color: white; font-size: 25px">Andre Thomas<br>Web Developer/Designer</p>
+  </div>
+</div>
+    
+<h1>Learn More About Us</h1>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigate</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    
+<style>
+    
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100%;
+  background-image: url("Images/coffeesteam.jpg");
+  background-repeat: no-repeat;
+  color: cornflowerblue;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: cornflowerblue;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.aside {
+  width: 16%;
+  padding-left: 10px;
+  margin-left: 10px;
+  float: right;
+  font-style: italic;
+  margin-left: -170px;
+}
+
+h3 {
+    padding-left: 40px;
+}
+
+.article1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 100px
+}
+
+.article2 {
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.article3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 100px
+}
+
+.references {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 100px
+}
+
+.references a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.references a:hover {
+    color: cornflowerblue;
+}
+
+.footer {
+    position: relative;
+    height: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: cornflowerblue;
+}
+</style>
+
+    
+<div class="aside">
+<h3>Quick Facts</h3>
+
+<ul>
+    <li>Incorporation: 2021</li>
+    <li>HeadQuarters: Atlanta, GA</li>
+</ul>
+</div>
+    
+    
+<div class="article1">
+
+  <h2>About Me</h2>
+    <p>Andre Thomas is a young upcoming entrepreneur who's idea of creating a safe place<br>
+    to sip and enjoy coffee finally became a reality. Through years of hard work, dedication,<br>
+    and heavy sacrifices, Andre was finally able to achieve his dream. And as CEO of this company his<br>
+    main motto, as he puts it, is "Never get complacent", because in doing so would be a diservice to not only<br> 
+    you the reader, but also every other customer who visits this shop. And with that said, please feel to read<br>
+    on and discover more about BeanHaven.</p>
+</div>
+    
+    
+    
+<div class="article2">
+    
+    <h2>Growing Community</h2>
+    
+    <p>According to the NCA, 64% of Americans consume coffee daily...so you know what that means? Expansion.<br>
+    we plan on opening more than 100 shops worldwide in the coming months, so if you would like to<br>
+    help please enter one of our many coffee shops and ask to speak to a representative.</p>
+    
+    <img src="images/digitalworld.jpg"  alt="world" style="width:95%;">
+        <div class="text-block">
+            <p>Time To Expand!</p>
+</div>
+</div>    
+    
+    
+<div class="article3">
+    
+<h2>Our Commitment</h2>
+    
+<p>When BeanHaven was created it was meant to bring everyone together, so<br>
+the best way to do that? By giving back. For every store built BeanHaven will donate<br>
+a small portion of our yearly earnings of your choice, for more information please<br>
+get in touch with any of our shops and ask for an representative.</p> 
+</div>
+    
+<div class="references">
+    
+<h2>References</h2>
+    <ul>
+        <li><a href="https://disturbmenot.co/coffee-statistics/">Coffee-Statistics</a></li>
+        <li><a href="https://www.ncausa.org/">NCA.org</a></li>
+    </ul>
+</div>
+
+<div class="footer">
+<p>Andre Thomas &copy; 2021</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100%;
+  background-image: url("Images/coffeesteam.jpg");
+  color: cornflowerblue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: cornflowerblue;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.section1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.table,th,td {
+    text-align: center;
+    border:1px solid cornflowerblue;
+    font-size: 20px;
+    margin-bottom: 50px
+}
+
+.table2,th,td {
+    text-align: center;
+    border:1px solid cornflowerblue;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .table,.table2,th,td {
+    width: 100%;
+  }
+}
+
+
+
+.footer {
+    position: relative;
+    height: 20px;
+    margin-top: 0px;
+    text-align: center;
+    color: cornflowerblue;
+}
